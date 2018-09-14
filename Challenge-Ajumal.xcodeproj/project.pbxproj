@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8957214C13B500BD4A40 /* AppDelegate.swift */; };
+		612E895A214C13B500BD4A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8959214C13B500BD4A40 /* ViewController.swift */; };
+		612E895D214C13B500BD4A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612E895B214C13B500BD4A40 /* Main.storyboard */; };
+		612E895F214C13B600BD4A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612E895E214C13B600BD4A40 /* Assets.xcassets */; };
+		612E8962214C13B600BD4A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */; };
+		612E896D214C13B600BD4A40 /* Challenge_AjumalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E896C214C13B600BD4A40 /* Challenge_AjumalTests.swift */; };
+		612E8978214C13B600BD4A40 /* Challenge_AjumalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		612E8969214C13B600BD4A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612E894C214C13B500BD4A40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612E8953214C13B500BD4A40;
+			remoteInfo = "Challenge-Ajumal";
+		};
+		612E8974214C13B600BD4A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 612E894C214C13B500BD4A40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 612E8953214C13B500BD4A40;
+			remoteInfo = "Challenge-Ajumal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		612E8954214C13B500BD4A40 /* Challenge-Ajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge-Ajumal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		612E8957214C13B500BD4A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		612E8959214C13B500BD4A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		612E895C214C13B500BD4A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		612E895E214C13B600BD4A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		612E8961214C13B600BD4A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		612E8963214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612E8968214C13B600BD4A40 /* Challenge-AjumalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-AjumalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		612E896C214C13B600BD4A40 /* Challenge_AjumalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_AjumalTests.swift; sourceTree = "<group>"; };
+		612E896E214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612E8973214C13B600BD4A40 /* Challenge-AjumalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-AjumalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_AjumalUITests.swift; sourceTree = "<group>"; };
+		612E8979214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		612E8951214C13B500BD4A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612E8965214C13B600BD4A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612E8970214C13B600BD4A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		612E894B214C13B500BD4A40 = {
+			isa = PBXGroup;
+			children = (
+				612E8956214C13B500BD4A40 /* Challenge-Ajumal */,
+				612E896B214C13B600BD4A40 /* Challenge-AjumalTests */,
+				612E8976214C13B600BD4A40 /* Challenge-AjumalUITests */,
+				612E8955214C13B500BD4A40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		612E8955214C13B500BD4A40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				612E8954214C13B500BD4A40 /* Challenge-Ajumal.app */,
+				612E8968214C13B600BD4A40 /* Challenge-AjumalTests.xctest */,
+				612E8973214C13B600BD4A40 /* Challenge-AjumalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		612E8956214C13B500BD4A40 /* Challenge-Ajumal */ = {
+			isa = PBXGroup;
+			children = (
+				612E8957214C13B500BD4A40 /* AppDelegate.swift */,
+				612E8959214C13B500BD4A40 /* ViewController.swift */,
+				612E895B214C13B500BD4A40 /* Main.storyboard */,
+				612E895E214C13B600BD4A40 /* Assets.xcassets */,
+				612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */,
+				612E8963214C13B600BD4A40 /* Info.plist */,
+			);
+			path = "Challenge-Ajumal";
+			sourceTree = "<group>";
+		};
+		612E896B214C13B600BD4A40 /* Challenge-AjumalTests */ = {
+			isa = PBXGroup;
+			children = (
+				612E896C214C13B600BD4A40 /* Challenge_AjumalTests.swift */,
+				612E896E214C13B600BD4A40 /* Info.plist */,
+			);
+			path = "Challenge-AjumalTests";
+			sourceTree = "<group>";
+		};
+		612E8976214C13B600BD4A40 /* Challenge-AjumalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */,
+				612E8979214C13B600BD4A40 /* Info.plist */,
+			);
+			path = "Challenge-AjumalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		612E8953214C13B500BD4A40 /* Challenge-Ajumal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612E897C214C13B600BD4A40 /* Build configuration list for PBXNativeTarget "Challenge-Ajumal" */;
+			buildPhases = (
+				612E8950214C13B500BD4A40 /* Sources */,
+				612E8951214C13B500BD4A40 /* Frameworks */,
+				612E8952214C13B500BD4A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Challenge-Ajumal";
+			productName = "Challenge-Ajumal";
+			productReference = 612E8954214C13B500BD4A40 /* Challenge-Ajumal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		612E8967214C13B600BD4A40 /* Challenge-AjumalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612E897F214C13B600BD4A40 /* Build configuration list for PBXNativeTarget "Challenge-AjumalTests" */;
+			buildPhases = (
+				612E8964214C13B600BD4A40 /* Sources */,
+				612E8965214C13B600BD4A40 /* Frameworks */,
+				612E8966214C13B600BD4A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612E896A214C13B600BD4A40 /* PBXTargetDependency */,
+			);
+			name = "Challenge-AjumalTests";
+			productName = "Challenge-AjumalTests";
+			productReference = 612E8968214C13B600BD4A40 /* Challenge-AjumalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		612E8972214C13B600BD4A40 /* Challenge-AjumalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612E8982214C13B600BD4A40 /* Build configuration list for PBXNativeTarget "Challenge-AjumalUITests" */;
+			buildPhases = (
+				612E896F214C13B600BD4A40 /* Sources */,
+				612E8970214C13B600BD4A40 /* Frameworks */,
+				612E8971214C13B600BD4A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612E8975214C13B600BD4A40 /* PBXTargetDependency */,
+			);
+			name = "Challenge-AjumalUITests";
+			productName = "Challenge-AjumalUITests";
+			productReference = 612E8973214C13B600BD4A40 /* Challenge-AjumalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		612E894C214C13B500BD4A40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Ajumal Ebrahim";
+				TargetAttributes = {
+					612E8953214C13B500BD4A40 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					612E8967214C13B600BD4A40 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 612E8953214C13B500BD4A40;
+					};
+					612E8972214C13B600BD4A40 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 612E8953214C13B500BD4A40;
+					};
+				};
+			};
+			buildConfigurationList = 612E894F214C13B500BD4A40 /* Build configuration list for PBXProject "Challenge-Ajumal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 612E894B214C13B500BD4A40;
+			productRefGroup = 612E8955214C13B500BD4A40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				612E8953214C13B500BD4A40 /* Challenge-Ajumal */,
+				612E8967214C13B600BD4A40 /* Challenge-AjumalTests */,
+				612E8972214C13B600BD4A40 /* Challenge-AjumalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		612E8952214C13B500BD4A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612E8962214C13B600BD4A40 /* LaunchScreen.storyboard in Resources */,
+				612E895F214C13B600BD4A40 /* Assets.xcassets in Resources */,
+				612E895D214C13B500BD4A40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612E8966214C13B600BD4A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612E8971214C13B600BD4A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		612E8950214C13B500BD4A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612E895A214C13B500BD4A40 /* ViewController.swift in Sources */,
+				612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612E8964214C13B600BD4A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612E896D214C13B600BD4A40 /* Challenge_AjumalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612E896F214C13B600BD4A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612E8978214C13B600BD4A40 /* Challenge_AjumalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		612E896A214C13B600BD4A40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612E8953214C13B500BD4A40 /* Challenge-Ajumal */;
+			targetProxy = 612E8969214C13B600BD4A40 /* PBXContainerItemProxy */;
+		};
+		612E8975214C13B600BD4A40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 612E8953214C13B500BD4A40 /* Challenge-Ajumal */;
+			targetProxy = 612E8974214C13B600BD4A40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		612E895B214C13B500BD4A40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				612E895C214C13B500BD4A40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				612E8961214C13B600BD4A40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		612E897A214C13B600BD4A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		612E897B214C13B600BD4A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		612E897D214C13B600BD4A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBK3BR3XX4;
+				INFOPLIST_FILE = "Challenge-Ajumal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Challenge-Ajumal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		612E897E214C13B600BD4A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBK3BR3XX4;
+				INFOPLIST_FILE = "Challenge-Ajumal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Challenge-Ajumal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		612E8980214C13B600BD4A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBK3BR3XX4;
+				INFOPLIST_FILE = "Challenge-AjumalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Challenge-AjumalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge-Ajumal.app/Challenge-Ajumal";
+			};
+			name = Debug;
+		};
+		612E8981214C13B600BD4A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBK3BR3XX4;
+				INFOPLIST_FILE = "Challenge-AjumalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Challenge-AjumalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge-Ajumal.app/Challenge-Ajumal";
+			};
+			name = Release;
+		};
+		612E8983214C13B600BD4A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBK3BR3XX4;
+				INFOPLIST_FILE = "Challenge-AjumalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Challenge-AjumalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Challenge-Ajumal";
+			};
+			name = Debug;
+		};
+		612E8984214C13B600BD4A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBK3BR3XX4;
+				INFOPLIST_FILE = "Challenge-AjumalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Challenge-AjumalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Challenge-Ajumal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		612E894F214C13B500BD4A40 /* Build configuration list for PBXProject "Challenge-Ajumal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612E897A214C13B600BD4A40 /* Debug */,
+				612E897B214C13B600BD4A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612E897C214C13B600BD4A40 /* Build configuration list for PBXNativeTarget "Challenge-Ajumal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612E897D214C13B600BD4A40 /* Debug */,
+				612E897E214C13B600BD4A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612E897F214C13B600BD4A40 /* Build configuration list for PBXNativeTarget "Challenge-AjumalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612E8980214C13B600BD4A40 /* Debug */,
+				612E8981214C13B600BD4A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612E8982214C13B600BD4A40 /* Build configuration list for PBXNativeTarget "Challenge-AjumalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612E8983214C13B600BD4A40 /* Debug */,
+				612E8984214C13B600BD4A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 612E894C214C13B500BD4A40 /* Project object */;
+}
