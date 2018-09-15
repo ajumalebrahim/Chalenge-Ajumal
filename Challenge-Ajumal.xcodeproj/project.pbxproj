@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8957214C13B500BD4A40 /* AppDelegate.swift */; };
-		612E895A214C13B500BD4A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8959214C13B500BD4A40 /* ViewController.swift */; };
 		612E895F214C13B600BD4A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612E895E214C13B600BD4A40 /* Assets.xcassets */; };
 		612E8962214C13B600BD4A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */; };
 		612E896D214C13B600BD4A40 /* Challenge_AjumalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E896C214C13B600BD4A40 /* Challenge_AjumalTests.swift */; };
 		612E8978214C13B600BD4A40 /* Challenge_AjumalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */; };
+		612E8986214D611B00BD4A40 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8985214D611B00BD4A40 /* DeliveryViewController.swift */; };
+		612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 /* Begin PBXFileReference section */
 		612E8954214C13B500BD4A40 /* Challenge-Ajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge-Ajumal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		612E8957214C13B500BD4A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		612E8959214C13B500BD4A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		612E895E214C13B600BD4A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		612E8961214C13B600BD4A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		612E8963214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		612E8973214C13B600BD4A40 /* Challenge-AjumalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Challenge-AjumalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge_AjumalUITests.swift; sourceTree = "<group>"; };
 		612E8979214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612E8985214D611B00BD4A40 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				612E8957214C13B500BD4A40 /* AppDelegate.swift */,
-				612E8959214C13B500BD4A40 /* ViewController.swift */,
+				612E8985214D611B00BD4A40 /* DeliveryViewController.swift */,
+				612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */,
 				612E895E214C13B600BD4A40 /* Assets.xcassets */,
 				612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */,
 				612E8963214C13B600BD4A40 /* Info.plist */,
@@ -252,8 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				612E895A214C13B500BD4A40 /* ViewController.swift in Sources */,
 				612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */,
+				612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */,
+				612E8986214D611B00BD4A40 /* DeliveryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
