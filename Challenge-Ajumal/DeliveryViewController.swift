@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class DeliveryViewController: UIViewController, UITableViewDelegate {
     
@@ -20,6 +21,10 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         title = "Things to Deliver"
+        viewModel.delegate = self;
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        viewModel.loadData()
         setUpTableView()
         
     }
@@ -53,6 +58,11 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
-    
-    
+}
+
+extension DeliveryViewController : DeliveryModelDelegate {
+    func updateTable() {
+        MBProgressHUD.hide(for: self.view, animated: true)
+        deliveryTableView.reloadData()
+    }
 }

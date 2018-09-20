@@ -7,9 +7,6 @@
 //
 
 import Foundation
-class APIUrlConstant : NSObject {
-    
-}
 
 struct APPURL {
     private struct Domains {
