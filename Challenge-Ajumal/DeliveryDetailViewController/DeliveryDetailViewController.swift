@@ -8,12 +8,14 @@
 
 import UIKit
 import MapKit
+import SDWebImage
 
 class DeliveryDetailViewController: UIViewController {
     
     var window: UIWindow?
     var mapView: MKMapView?
-
+    var deliveryData: DeliverySevice?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +30,6 @@ class DeliveryDetailViewController: UIViewController {
         let mapHeight:CGFloat = view.frame.size.height * 0.75
         
         mapView.frame = CGRect(x: leftMargin, y: topMargin, width: mapWidth, height: mapHeight)
-        
         mapView.mapType = MKMapType.standard
         mapView.isZoomEnabled = true
         mapView.isScrollEnabled = true
@@ -36,6 +37,51 @@ class DeliveryDetailViewController: UIViewController {
         
         let vw = UIView.init(frame: CGRect(x: 0, y: mapHeight, width: mapWidth, height: view.frame.size.height - mapHeight))
         vw.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        let imgVwDelvry = UIImageView()
+        let lblDelvryTitle = UILabel()
+        imgVwDelvry.translatesAutoresizingMaskIntoConstraints = false
+        lblDelvryTitle.translatesAutoresizingMaskIntoConstraints = false
+        
+        lblDelvryTitle.text = deliveryData?.description
+        if let imageUrl = deliveryData?.imageUrl {
+            imgVwDelvry.sd_setImage(with: URL(string: imageUrl), placeholderImage: #imageLiteral(resourceName: "NoImage"))
+        } else {
+            imgVwDelvry.image = #imageLiteral(resourceName: "NoImage")
+        }
+        
+        vw.addSubview(imgVwDelvry)
+        vw.addSubview(lblDelvryTitle)
+        
+        let views: [String: Any] = [
+            "image": imgVwDelvry,
+            "Label": lblDelvryTitle]
+        var allConstraints: [NSLayoutConstraint] = []
+        let iconVerticalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-15-[image(50)]",
+            metrics: nil,
+            views: views)
+        allConstraints += iconVerticalConstraints
+        
+        let nameLabelVerticalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-15-[Label]",
+            metrics: nil,
+            views: views)
+        allConstraints += nameLabelVerticalConstraints
+        
+        let iconHConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-15-[image(50)]",
+            metrics: nil,
+            views: views)
+        allConstraints += iconHConstraints
+        
+        let topRowHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-15-[image(50)]-[Label]-15-|",
+            metrics: nil,
+            views: views)
+        allConstraints += topRowHorizontalConstraints
+        
+        NSLayoutConstraint.activate(allConstraints)
+        
         view.addSubview(vw)
     }
 

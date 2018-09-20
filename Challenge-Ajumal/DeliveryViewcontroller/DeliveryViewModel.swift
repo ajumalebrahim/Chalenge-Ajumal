@@ -11,6 +11,7 @@ import SDWebImage
 
 protocol DeliveryModelDelegate {
     func updateTable()
+    func showDetails(deliveryData:DeliverySevice) 
 }
 
 class  DeliveryViewModel: NSObject {
@@ -33,11 +34,7 @@ extension DeliveryViewModel: DeliveryServiceDelgate {
     }
 }
 
-extension DeliveryViewModel: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
+extension DeliveryViewModel: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -52,5 +49,13 @@ extension DeliveryViewModel: UITableViewDataSource {
         // Configure the cell...
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.showDetails(deliveryData: deliveryData[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }

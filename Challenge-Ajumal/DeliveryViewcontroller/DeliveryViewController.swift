@@ -39,29 +39,26 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
         deliveryTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
-        deliveryTableView.delegate = self
         deliveryTableView.rowHeight = UITableViewAutomaticDimension
         deliveryTableView.estimatedRowHeight = 80
         deliveryTableView.register(DeliveryCell.self, forCellReuseIdentifier: DeliveryViewModel.cellIdentifier)
         deliveryTableView.dataSource = viewModel
+        deliveryTableView.delegate = viewModel
         self.view.addSubview(deliveryTableView)
     }
     
-    // MARK: - TableView Delegate
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = DeliveryDetailViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
+   
 }
 
 extension DeliveryViewController : DeliveryModelDelegate {
     func updateTable() {
         MBProgressHUD.hide(for: self.view, animated: true)
         deliveryTableView.reloadData()
+    }
+    
+    func showDetails(deliveryData:DeliverySevice)  {
+        let vc = DeliveryDetailViewController()
+        vc.deliveryData = deliveryData
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
