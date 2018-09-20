@@ -22,11 +22,9 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         title = "Things to Deliver"
         viewModel.delegate = self;
-        
+        setUpTableView()
         MBProgressHUD.showAdded(to: self.view, animated: true)
         viewModel.loadData()
-        setUpTableView()
-        
     }
     
     override func didReceiveMemoryWarning() {
