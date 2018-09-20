@@ -10,11 +10,12 @@ import UIKit
 import MapKit
 import SDWebImage
 
-class DeliveryDetailViewController: UIViewController {
+class DeliveryDetailViewController: UIViewController, MKMapViewDelegate {
     
-    var window: UIWindow?
     var mapView: MKMapView?
     var deliveryData: DeliverySevice?
+    let imgVwDelvry = UIImageView()
+    let lblDelvryTitle = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,13 @@ class DeliveryDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         title = "Delivery Details"
+        updateUI()
         
+    }
+    
+    private func updateUI() {
         let mapView = MKMapView()
+        mapView.delegate = self
         let leftMargin:CGFloat = 0
         let topMargin:CGFloat = 0
         let mapWidth:CGFloat = view.frame.size.width
@@ -37,8 +43,7 @@ class DeliveryDetailViewController: UIViewController {
         
         let vw = UIView.init(frame: CGRect(x: 0, y: mapHeight, width: mapWidth, height: view.frame.size.height - mapHeight))
         vw.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        let imgVwDelvry = UIImageView()
-        let lblDelvryTitle = UILabel()
+        
         imgVwDelvry.translatesAutoresizingMaskIntoConstraints = false
         lblDelvryTitle.translatesAutoresizingMaskIntoConstraints = false
         
@@ -79,10 +84,42 @@ class DeliveryDetailViewController: UIViewController {
             metrics: nil,
             views: views)
         allConstraints += topRowHorizontalConstraints
-        
         NSLayoutConstraint.activate(allConstraints)
         
         view.addSubview(vw)
+    }
+    
+    func updateAnnotation() {
+        
+        guard let address = deliveryData?.loc.address else {
+            return
+        }
+        guard let lat = deliveryData?.loc.lat else {
+            return
+        }
+        guard let lng = deliveryData?.loc.lng else {
+            return
+        }
+        
+        let pin = Pin(title: address,
+                              coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+        mapView?.addAnnotation(pin)
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard annotation is MKPointAnnotation else { return nil }
+        
+        let identifier = "Annotation"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView!.canShowCallout = true
+        } else {
+            annotationView!.annotation = annotation
+        }
+        
+        return annotationView
     }
 
     override func didReceiveMemoryWarning() {

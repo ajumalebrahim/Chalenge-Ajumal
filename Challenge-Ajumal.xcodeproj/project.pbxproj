@@ -15,6 +15,7 @@
 		612E8978214C13B600BD4A40 /* Challenge_AjumalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */; };
 		612E8986214D611B00BD4A40 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8985214D611B00BD4A40 /* DeliveryViewController.swift */; };
 		612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */; };
+		619E387E2154153400C4D6A3 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619E387D2154153400C4D6A3 /* Pin.swift */; };
 		61F6BAB02153872B000863F0 /* DeliveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAAF2153872B000863F0 /* DeliveryCell.swift */; };
 		61F6BAB22153AF6E000863F0 /* APIUrlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */; };
 		61F6BAB42153C190000863F0 /* DeliveryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAB32153C190000863F0 /* DeliveryServices.swift */; };
@@ -53,6 +54,7 @@
 		612E8979214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		612E8985214D611B00BD4A40 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
 		612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewModel.swift; sourceTree = "<group>"; };
+		619E387D2154153400C4D6A3 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		61F6BAAF2153872B000863F0 /* DeliveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCell.swift; sourceTree = "<group>"; };
 		61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrlConstant.swift; sourceTree = "<group>"; };
 		61F6BAB32153C190000863F0 /* DeliveryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryServices.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				61F6BABC2153D4E9000863F0 /* DeliveryDetailViewController.swift */,
+				619E387D2154153400C4D6A3 /* Pin.swift */,
 			);
 			path = DeliveryDetailViewController;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				61F6BABD2153D4E9000863F0 /* DeliveryDetailViewController.swift in Sources */,
 				612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */,
 				61F6BAB02153872B000863F0 /* DeliveryCell.swift in Sources */,
+				619E387E2154153400C4D6A3 /* Pin.swift in Sources */,
 				612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */,
 				612E8986214D611B00BD4A40 /* DeliveryViewController.swift in Sources */,
 				61F6BAB22153AF6E000863F0 /* APIUrlConstant.swift in Sources */,
