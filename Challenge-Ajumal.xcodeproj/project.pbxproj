@@ -18,6 +18,7 @@
 		61F6BAB02153872B000863F0 /* DeliveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAAF2153872B000863F0 /* DeliveryCell.swift */; };
 		61F6BAB22153AF6E000863F0 /* APIUrlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */; };
 		61F6BAB42153C190000863F0 /* DeliveryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAB32153C190000863F0 /* DeliveryServices.swift */; };
+		61F6BABD2153D4E9000863F0 /* DeliveryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BABC2153D4E9000863F0 /* DeliveryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		61F6BAAF2153872B000863F0 /* DeliveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCell.swift; sourceTree = "<group>"; };
 		61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrlConstant.swift; sourceTree = "<group>"; };
 		61F6BAB32153C190000863F0 /* DeliveryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryServices.swift; sourceTree = "<group>"; };
+		61F6BABC2153D4E9000863F0 /* DeliveryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewController.swift; sourceTree = "<group>"; };
 		73286A0A497AE513490854B9 /* Pods_Challenge_AjumalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_AjumalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847ACC70FDE89BFC8050C1B8 /* Pods-Challenge-Ajumal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge-Ajumal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge-Ajumal/Pods-Challenge-Ajumal.release.xcconfig"; sourceTree = "<group>"; };
 		8DB5FCD43F70F6F28ED84D0F /* Pods_Challenge_AjumalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_AjumalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,10 +125,8 @@
 			children = (
 				612E8957214C13B500BD4A40 /* AppDelegate.swift */,
 				61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */,
-				61F6BAB32153C190000863F0 /* DeliveryServices.swift */,
-				612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */,
-				612E8985214D611B00BD4A40 /* DeliveryViewController.swift */,
-				61F6BAAF2153872B000863F0 /* DeliveryCell.swift */,
+				61F6BABB2153D4E9000863F0 /* DeliveryDetailViewController */,
+				61F6BAB52153D3DE000863F0 /* DeliveryViewcontroller */,
 				612E895E214C13B600BD4A40 /* Assets.xcassets */,
 				612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */,
 				612E8963214C13B600BD4A40 /* Info.plist */,
@@ -150,6 +150,25 @@
 				612E8979214C13B600BD4A40 /* Info.plist */,
 			);
 			path = "Challenge-AjumalUITests";
+			sourceTree = "<group>";
+		};
+		61F6BAB52153D3DE000863F0 /* DeliveryViewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				61F6BAB32153C190000863F0 /* DeliveryServices.swift */,
+				612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */,
+				612E8985214D611B00BD4A40 /* DeliveryViewController.swift */,
+				61F6BAAF2153872B000863F0 /* DeliveryCell.swift */,
+			);
+			path = DeliveryViewcontroller;
+			sourceTree = "<group>";
+		};
+		61F6BABB2153D4E9000863F0 /* DeliveryDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61F6BABC2153D4E9000863F0 /* DeliveryDetailViewController.swift */,
+			);
+			path = DeliveryDetailViewController;
 			sourceTree = "<group>";
 		};
 		987B613DC5AF8C73CDB1B16D /* Frameworks */ = {
@@ -337,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F6BABD2153D4E9000863F0 /* DeliveryDetailViewController.swift in Sources */,
 				612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */,
 				61F6BAB02153872B000863F0 /* DeliveryCell.swift in Sources */,
 				612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */,
