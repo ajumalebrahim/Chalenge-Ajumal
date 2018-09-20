@@ -12,7 +12,7 @@ import SDWebImage
 
 class DeliveryDetailViewController: UIViewController, MKMapViewDelegate {
     
-    var mapView: MKMapView?
+    var mapView = MKMapView()
     var deliveryData: DeliverySevice?
     let imgVwDelvry = UIImageView()
     let lblDelvryTitle = UILabel()
@@ -24,11 +24,11 @@ class DeliveryDetailViewController: UIViewController, MKMapViewDelegate {
         view.backgroundColor = .white
         title = "Delivery Details"
         updateUI()
+        updateAnnotation()
         
     }
     
     private func updateUI() {
-        let mapView = MKMapView()
         mapView.delegate = self
         let leftMargin:CGFloat = 0
         let topMargin:CGFloat = 0
@@ -39,6 +39,9 @@ class DeliveryDetailViewController: UIViewController, MKMapViewDelegate {
         mapView.mapType = MKMapType.standard
         mapView.isZoomEnabled = true
         mapView.isScrollEnabled = true
+//        mapView.register(ArtworkMarkerView.self,
+//                         forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+
         view.addSubview(mapView)
         
         let vw = UIView.init(frame: CGRect(x: 0, y: mapHeight, width: mapWidth, height: view.frame.size.height - mapHeight))
@@ -90,7 +93,6 @@ class DeliveryDetailViewController: UIViewController, MKMapViewDelegate {
     }
     
     func updateAnnotation() {
-        
         guard let address = deliveryData?.loc.address else {
             return
         }
@@ -100,26 +102,34 @@ class DeliveryDetailViewController: UIViewController, MKMapViewDelegate {
         guard let lng = deliveryData?.loc.lng else {
             return
         }
+        let initialLocation = CLLocation(latitude: lat, longitude: lng)
+        centerMapOnLocation(location: initialLocation)
         
         let pin = Pin(title: address,
                               coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
-        mapView?.addAnnotation(pin)
+        mapView.addAnnotation(pin)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard annotation is MKPointAnnotation else { return nil }
-        
-        let identifier = "Annotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
-        if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = true
-        } else {
-            annotationView!.annotation = annotation
+        let identifier = "Pin"
+        if annotation is Pin {
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            if annotationView == nil {
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView!.canShowCallout = true
+            } else {
+                annotationView!.annotation = annotation
+            }
+            return annotationView
         }
         
-        return annotationView
+        return nil
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  1000, 1000)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
