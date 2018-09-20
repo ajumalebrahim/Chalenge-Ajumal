@@ -7,13 +7,36 @@
 //
 
 import UIKit
+import MapKit
 
 class DeliveryDetailViewController: UIViewController {
+    
+    var window: UIWindow?
+    var mapView: MKMapView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        title = "Delivery Details"
+        
+        let mapView = MKMapView()
+        let leftMargin:CGFloat = 0
+        let topMargin:CGFloat = 0
+        let mapWidth:CGFloat = view.frame.size.width
+        let mapHeight:CGFloat = view.frame.size.height * 0.75
+        
+        mapView.frame = CGRect(x: leftMargin, y: topMargin, width: mapWidth, height: mapHeight)
+        
+        mapView.mapType = MKMapType.standard
+        mapView.isZoomEnabled = true
+        mapView.isScrollEnabled = true
+        view.addSubview(mapView)
+        
+        let vw = UIView.init(frame: CGRect(x: 0, y: mapHeight, width: mapWidth, height: view.frame.size.height - mapHeight))
+        vw.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        view.addSubview(vw)
     }
 
     override func didReceiveMemoryWarning() {
