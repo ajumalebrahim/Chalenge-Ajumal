@@ -30,7 +30,6 @@ extension DeliveryViewModel: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        Deliveries
         let cell = tableView.dequeueReusableCell(withIdentifier: DeliveryViewModel.cellIdentifier, for: indexPath) as! DeliveryCell
         cell.imgVwDelvry.image = #imageLiteral(resourceName: "NoImage")
         cell.lblDelvryTitle.text = "Delivery - \(indexPath.row)"
