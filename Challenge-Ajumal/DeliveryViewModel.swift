@@ -14,6 +14,10 @@ class  DeliveryViewModel: NSObject {
 
 extension DeliveryViewModel: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -26,9 +30,10 @@ extension DeliveryViewModel: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DeliveryViewModel.cellIdentifier, for: indexPath)
-        cell.imageView?.image = #imageLiteral(resourceName: "NoImage")
-        cell.textLabel?.text = "Delivery - \(indexPath.row)"
+        Deliveries
+        let cell = tableView.dequeueReusableCell(withIdentifier: DeliveryViewModel.cellIdentifier, for: indexPath) as! DeliveryCell
+        cell.imgVwDelvry.image = #imageLiteral(resourceName: "NoImage")
+        cell.lblDelvryTitle.text = "Delivery - \(indexPath.row)"
         // Configure the cell...
         
         return cell

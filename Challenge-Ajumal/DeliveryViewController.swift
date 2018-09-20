@@ -21,7 +21,7 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         title = "Things to Deliver"
         setUpTableView()
-        deliveryTableView.dataSource = viewModel
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,10 +35,12 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
-        
         deliveryTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
-        deliveryTableView.register(UITableViewCell.self, forCellReuseIdentifier: DeliveryViewModel.cellIdentifier)
         deliveryTableView.delegate = self
+        deliveryTableView.rowHeight = UITableViewAutomaticDimension
+        deliveryTableView.estimatedRowHeight = 80
+        deliveryTableView.register(DeliveryCell.self, forCellReuseIdentifier: DeliveryViewModel.cellIdentifier)
+        deliveryTableView.dataSource = viewModel
         self.view.addSubview(deliveryTableView)
     }
     
@@ -46,6 +48,10 @@ class DeliveryViewController: UIViewController, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     

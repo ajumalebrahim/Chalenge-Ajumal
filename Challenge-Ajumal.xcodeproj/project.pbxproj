@@ -14,6 +14,8 @@
 		612E8978214C13B600BD4A40 /* Challenge_AjumalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8977214C13B600BD4A40 /* Challenge_AjumalUITests.swift */; };
 		612E8986214D611B00BD4A40 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8985214D611B00BD4A40 /* DeliveryViewController.swift */; };
 		612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */; };
+		61F6BAB02153872B000863F0 /* DeliveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAAF2153872B000863F0 /* DeliveryCell.swift */; };
+		61F6BAB22153AF6E000863F0 /* APIUrlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		612E8979214C13B600BD4A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		612E8985214D611B00BD4A40 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
 		612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewModel.swift; sourceTree = "<group>"; };
+		61F6BAAF2153872B000863F0 /* DeliveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryCell.swift; sourceTree = "<group>"; };
+		61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrlConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				612E8957214C13B500BD4A40 /* AppDelegate.swift */,
+				61F6BAB12153AF6E000863F0 /* APIUrlConstant.swift */,
 				612E8985214D611B00BD4A40 /* DeliveryViewController.swift */,
+				61F6BAAF2153872B000863F0 /* DeliveryCell.swift */,
 				612E8987214D61B400BD4A40 /* DeliveryViewModel.swift */,
 				612E895E214C13B600BD4A40 /* Assets.xcassets */,
 				612E8960214C13B600BD4A40 /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				612E8958214C13B500BD4A40 /* AppDelegate.swift in Sources */,
+				61F6BAB02153872B000863F0 /* DeliveryCell.swift in Sources */,
 				612E8988214D61B400BD4A40 /* DeliveryViewModel.swift in Sources */,
 				612E8986214D611B00BD4A40 /* DeliveryViewController.swift in Sources */,
+				61F6BAB22153AF6E000863F0 /* APIUrlConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
